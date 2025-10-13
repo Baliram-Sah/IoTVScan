@@ -57,8 +57,8 @@ PORT    PROTO   STATE     SERVICE    VERSION
 80      tcp     open      HTTP       nginx/1.18.0
 
 Vulnerabilities Found:
-• Port 23: Telnet service is insecure
-  Severity: HIGH
-  Recommendation: Disable Telnet and use SSH instead
+Port 23: Telnet service is insecure
+Severity: HIGH
+Recommendation: Disable Telnet and use SSH instead
 
 

@@ -12,10 +12,11 @@ Example: argparse
          paramiko
          beautifulsoup4
          requests
-
+---
 # Run directly from the command lile.
 Go to directory path
 command: python3 -m smap.main <target>
+--
 Examples:
 # Scan a single host for common ports
 python -m smap 192.168.1.1
@@ -29,7 +30,7 @@ python -m smap 192.168.1.0/24 -p 22,80,443 -o results.json
 # Perform a UDP scan
 python -m smap 192.168.1.0/24 -p 53,161 -sU
 
-
+---
 Project Structure
 smap/
 ├── __main__.py          # Entry point

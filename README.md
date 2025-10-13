@@ -13,8 +13,8 @@ Example: argparse
          beautifulsoup4
          requests
 
-Run directly from the command file.
-Go to directory paht
+Run directly from the command lile.
+Go to directory path
 command: python3 -m smap.main <target>
 Examples:
 # Scan a single host for common ports

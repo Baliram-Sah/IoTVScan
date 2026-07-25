@@ -1,21 +1,6 @@
 # IoTVScan
 IoT-VScan, a lightweight and modular vulnerability scanner that integrates multiple modules for IoT devices vulnerability scanning. The tool perform the common port scanning, web fingerprinting, device discovery and default credentials checking. The tool perform common port scanning to detects the running services and versions of services.
 
----
-## Installation Prerequisites
-Make sure you have installed:
-Python 3.8+
-WhatWeb installed on your system
-The following Python dependencies:
-```
-pip install -r requirements.txt
-Example: argparse
-         jinja2
-         paramiko
-         beautifulsoup4
-         requests
-```
-
 ## Project Structure
 ```
 smap/
@@ -168,20 +153,9 @@ python main.py 192.168.1.0/24 \
 
 # Supported Protocols
 
-- HTTP
-- HTTPS
-- SSH
-- FTP
-- Telnet
-- SMTP
-- DNS
-- MQTT
-- SNMP
-- RTSP
-- Modbus
-- CoAP
-- IMAP
-- POP3
+- HTTP, HTTPS, SSH, FTP, Telnet
+- SMTP, DNS, MQTT, SNMP, RTSP
+- Modbus, CoAP, IMAP, POP3
 
 ---
 
@@ -284,17 +258,12 @@ This project is licensed under the MIT License.
 
 **Baliram Sah**
 
-- GitHub: https://github.com/yourusername
-- LinkedIn: https://linkedin.com/in/yourprofile
-- Email: your.email@example.com
+- GitHub: https://github.com/Baliram-Sah
+- LinkedIn: https://linkedin.com/in/baliram-sah1432
+- Email: sahb455@gmail.com
 
 ---
 
 ## ⭐ Support
 
 If you found this project helpful, consider giving it a **⭐ Star** on GitHub.
-Suggestions before uploading to GitHub
-Replace the placeholder GitHub, LinkedIn, and email links with your own.
-Add screenshots of the CLI output and generated HTML report in a screenshots/ folder and reference them in the README. This makes the repository much more attractive.
-Include a requirements.txt file so users can install dependencies easily with pip install -r requirements.txt.
-Add a LICENSE file (MIT is a common choice for open-source projects).

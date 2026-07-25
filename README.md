@@ -63,8 +63,8 @@ Recommendation: Disable Telnet and use SSH instead
 ## Clone Repository
 
 ```bash
-git clone https://github.com/Baliram-Sah/SMAP.git
-cd SMAP
+git clone https://github.com/Baliram-Sah/IoT-VScan.git |
+cd IoT-VScan
 ```
 
 ## Install Dependencies

@@ -63,7 +63,7 @@ Recommendation: Disable Telnet and use SSH instead
 ## Clone Repository
 
 ```bash
-git clone https://github.com/Baliram-Sah/IoTVScan.git |
+git clone https://github.com/Baliram-Sah/IoTVScan.git &
 cd IoTVScan
 ```
 

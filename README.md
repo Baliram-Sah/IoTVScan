@@ -1,6 +1,4 @@
 # IoTVScan
-IoT-VScan, a lightweight and modular vulnerability scanner that integrates multiple modules for IoT devices vulnerability scanning. The tool perform the common port scanning, web fingerprinting, device discovery and default credentials checking. The tool perform common port scanning to detects the running services and versions of services.
-
 SMAP (**Security Mapping and Assessment Platform**) is a **Python-based Command-Line Interface (CLI) IoT Vulnerability Scanner** designed to automate network reconnaissance and security assessments of IoT devices. It performs host discovery, TCP/UDP port scanning, service detection, banner grabbing, default credential detection, and vulnerability identification while generating professional JSON and HTML reports.
 
 > **Disclaimer:** This tool is intended for educational purposes and authorized security assessments only. Do not scan systems without proper authorization.

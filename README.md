@@ -15,24 +15,6 @@ Example: argparse
          beautifulsoup4
          requests
 ```
----
-## Run directly from the command lile.
-Go to directory path
-command: python3 -m smap.main <target>
---
-Examples:
-## Scan a single host for common ports
-python -m smap 192.168.1.1
-
-## Scan an entire subnet with default credential checks
-python -m smap 192.168.1.0/24 -p common -d creds/default_creds.json
-
-## Scan specific TCP ports and export results
-python -m smap 192.168.1.0/24 -p 22,80,443 -o results.json
-
-## Perform a UDP scan
-python -m smap 192.168.1.0/24 -p 53,161 -sU
-
 
 ## Project Structure
 ```
@@ -65,4 +47,254 @@ Port 23: Telnet service is insecure
 Severity: HIGH
 Recommendation: Disable Telnet and use SSH instead
 ```
+# Installation
 
+## Clone Repository
+
+```bash
+git clone https://github.com/yourusername/SMAP.git
+cd SMAP
+```
+
+## Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### Install WhatWeb
+
+Ubuntu/Debian
+
+```bash
+sudo apt install whatweb
+```
+
+---
+
+# Usage
+
+## Scan a Single Host
+
+```bash
+python main.py 192.168.1.1
+```
+
+---
+
+## Scan Common Ports
+
+```bash
+python main.py 192.168.1.1 -p common
+```
+
+---
+
+## Scan Specific Ports
+
+```bash
+python main.py 192.168.1.1 -p 22,80,443
+```
+
+---
+
+## Scan Port Range
+
+```bash
+python main.py 192.168.1.1 -p 1-1000
+```
+
+---
+
+## Scan Entire Network
+
+```bash
+python main.py 192.168.1.0/24
+```
+
+---
+
+## UDP Scan
+
+```bash
+python main.py 192.168.1.1 -sU
+```
+
+---
+
+## TCP Scan
+
+```bash
+python main.py 192.168.1.1 -sT
+```
+
+---
+
+## Use Default Credential File
+
+```bash
+python main.py 192.168.1.1 -d default_cred.json
+```
+
+---
+
+## Generate HTML Report
+
+```bash
+python main.py 192.168.1.1 --html
+```
+
+---
+
+## Save JSON Report
+
+```bash
+python main.py 192.168.1.1 -o results.json
+```
+
+---
+
+# Example
+
+```bash
+python main.py 192.168.1.0/24 \
+-p common \
+-d default_cred.json \
+--html \
+-o results.json
+```
+
+---
+
+# Supported Protocols
+
+- HTTP
+- HTTPS
+- SSH
+- FTP
+- Telnet
+- SMTP
+- DNS
+- MQTT
+- SNMP
+- RTSP
+- Modbus
+- CoAP
+- IMAP
+- POP3
+
+---
+
+# Security Checks
+
+SMAP can identify:
+
+- Open Ports
+- Running Services
+- Banner Information
+- Service Versions
+- Default Credentials
+- Weak SSH Configuration
+- Insecure Telnet Services
+- Default Web Interfaces
+- SNMP Exposure
+- UPnP Exposure
+- Potential IoT Misconfigurations
+
+---
+
+# Output
+
+## Terminal Output
+
+- Open Ports
+- Service Information
+- Banner Information
+- Device Type
+- Operating System Guess
+- Vulnerability Summary
+
+## JSON Report
+
+Contains structured scan results for automation and further analysis.
+
+## HTML Report
+
+Generates a professional report including:
+
+- Scan Summary
+- Host Information
+- Open Ports
+- Service Details
+- Vulnerabilities
+- Severity Levels
+- Security Recommendations
+
+---
+
+# Future Improvements
+
+- CVE Integration
+- CVSS Severity Scoring
+- SSL/TLS Security Checks
+- SMB Enumeration
+- HTTP Security Header Analysis
+- PDF Report Generation
+- Plugin-Based Vulnerability Detection
+- Docker Support
+- Export to CSV
+- Scheduled Scans
+
+---
+
+# Contributing
+
+Contributions are welcome!
+
+1. Fork the repository.
+2. Create a feature branch.
+
+```bash
+git checkout -b feature/new-feature
+```
+
+3. Commit your changes.
+
+```bash
+git commit -m "Add new feature"
+```
+
+4. Push to your branch.
+
+```bash
+git push origin feature/new-feature
+```
+
+5. Open a Pull Request.
+
+---
+
+# License
+
+This project is licensed under the MIT License.
+
+---
+
+# Author
+
+**Baliram Sah**
+
+- GitHub: https://github.com/yourusername
+- LinkedIn: https://linkedin.com/in/yourprofile
+- Email: your.email@example.com
+
+---
+
+## ⭐ Support
+
+If you found this project helpful, consider giving it a **⭐ Star** on GitHub.
+Suggestions before uploading to GitHub
+Replace the placeholder GitHub, LinkedIn, and email links with your own.
+Add screenshots of the CLI output and generated HTML report in a screenshots/ folder and reference them in the README. This makes the repository much more attractive.
+Include a requirements.txt file so users can install dependencies easily with pip install -r requirements.txt.
+Add a LICENSE file (MIT is a common choice for open-source projects).

@@ -88,7 +88,7 @@ sudo apt install whatweb
 ## Scan a Single Host
 
 ```bash
-python main.py 192.168.1.1
+python3 -m smap.main 192.168.1.1
 ```
 
 ---
@@ -96,7 +96,7 @@ python main.py 192.168.1.1
 ## Scan Common Ports
 
 ```bash
-python main.py 192.168.1.1 -p common
+python3 -m smap.main 192.168.1.1 -p common
 ```
 
 ---
@@ -104,7 +104,7 @@ python main.py 192.168.1.1 -p common
 ## Scan Specific Ports
 
 ```bash
-python main.py 192.168.1.1 -p 22,80,443
+python3 -m smap.main 192.168.1.1 -p 22,80,443
 ```
 
 ---
@@ -112,7 +112,7 @@ python main.py 192.168.1.1 -p 22,80,443
 ## Scan Port Range
 
 ```bash
-python main.py 192.168.1.1 -p 1-1000
+python3 -m smap.main 192.168.1.1 -p 1-1000
 ```
 
 ---
@@ -120,7 +120,7 @@ python main.py 192.168.1.1 -p 1-1000
 ## Scan Entire Network
 
 ```bash
-python main.py 192.168.1.0/24
+python3 -m smap.main 192.168.1.0/24
 ```
 
 ---
@@ -128,7 +128,7 @@ python main.py 192.168.1.0/24
 ## UDP Scan
 
 ```bash
-python main.py 192.168.1.1 -sU
+python3 -m smap.main 192.168.1.1 -sU
 ```
 
 ---
@@ -136,7 +136,7 @@ python main.py 192.168.1.1 -sU
 ## TCP Scan
 
 ```bash
-python main.py 192.168.1.1 -sT
+python3 -m smap.main 192.168.1.1 -sT
 ```
 
 ---
@@ -144,7 +144,7 @@ python main.py 192.168.1.1 -sT
 ## Use Default Credential File
 
 ```bash
-python main.py 192.168.1.1 -d default_cred.json
+python3 -m smap.main 192.168.1.1 -d default_cred.json
 ```
 
 ---
@@ -152,7 +152,7 @@ python main.py 192.168.1.1 -d default_cred.json
 ## Generate HTML Report
 
 ```bash
-python main.py 192.168.1.1 --html
+python3 -m smap.main 192.168.1.1 --html
 ```
 
 ---
@@ -160,7 +160,7 @@ python main.py 192.168.1.1 --html
 ## Save JSON Report
 
 ```bash
-python main.py 192.168.1.1 -o results.json
+python3 -m smap.main 192.168.1.1 -o results.json
 ```
 
 ---
@@ -168,7 +168,7 @@ python main.py 192.168.1.1 -o results.json
 # Example
 
 ```bash
-python main.py 192.168.1.0/24 \
+python3 -m smap.main 192.168.1.0/24 \
 -p common \
 -d default_cred.json \
 --html \
